@@ -1,0 +1,22 @@
+.my-orders{
+    margin-bottom: 100px;
+    margin-top:10%;
+}
+.my-orders h1{
+    /* margin-top: 14%; */
+    margin-bottom: 50px;
+    text-align: center;
+}
+.my-orders .order-img{
+    width: 100px;
+}
+
+.my-orders .row{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-left:60px;
+    margin-right:30px;
+    border-bottom:1px solid #ddd;
+
+}

@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    background-color: #b3074b;
+  }
+  .container {
+    margin-left: 75%;
+    margin-right: 5%;
+    
+  }
+  .box{
+    position:absolute;
+    top:22%;
+    width:60%;
+    height:71%;
+    margin-left:20%;
+    justify-content: center;
+    border: 2px solid #ff1876;
+    /* background-color: #b3074b; */
+  }
+  .box .sideImage img{
+    width:fit-content;
+    position:absolute;
+  }
+  .common-form {
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 47%;
+    margin-top:5%;
+  }
+  .form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 2px solid #ff1876;
+    padding-left: 15px;
+    color: #ff1876;
+    border-radius: 5px;
+  }
+  .form-button {
+    height: 35px;
+    border: solid #ff1876;
+    background:#ff1876 ;
+    cursor: pointer;
+    color:#fff;
+  }
+  .error-p{
+    color: red;
+  }
+  
+  .message-p{
+    color: green;
+    text-align: center;
+  }
+  
+  .carousel-caption {
+    background-color: #0000007d;
+    border-radius: 10px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  .invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top:-20px
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+  .max-width{
+    width: 100%;
+  }
+.user-auth h1{
+    /* margin-top: 50px; */
+    margin-bottom: 80px;
+    /* color: blueviolet;   */
+    /* text-align: center;  */
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+    color:#ff1876;
+    margin-top:-3%;
+    margin-left:49%;
+    /* position:absolute; */
+}
+.sign-up h1, .login h1{
+    /* margin-to; */
+    margin-bottom: 30px;
+    color:#ff1876;
+    /* margin-top:10px; */
+    margin-left:49%;
+    /* margin-top: -200%; */
+    position:absolute;
+}
+
+/* .user-auth {
+    margin-bottom: 100px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 30px;
+    color:#ff1876;
+    margin-top:-3%;
+    margin-left:49%;
+    position:absolute;
+} */ 
+.user-auth a{
+    color: blueviolet;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+}

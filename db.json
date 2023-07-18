@@ -1,0 +1,423 @@
+{
+  "signupUsers": [
+    {
+      "fullname": "mouni",
+      "email": "mouni@gmail.com",
+      "password": "mouni",
+      "confirmpassword": "mouni",
+      "id": 1
+    },
+    {
+      "fullname": "mouni",
+      "email": "mouniga@gmail.com",
+      "password": "mouni",
+      "confirmpassword": "mouni",
+      "id": 2
+    },
+    {
+      "fullname": "mouni",
+      "email": "mouniga@gmail.com",
+      "password": "mouni",
+      "confirmpassword": "mouni",
+      "id": 3
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 4
+    },
+    {
+      "fullname": "mouni",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 5
+    },
+    {
+      "fullname": "mouni",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 6
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 7
+    },
+    {
+      "fullname": "mouni",
+      "email": "2k19cse058@kiot.ac.in",
+      "password": "mouni",
+      "confirmpassword": "mouni",
+      "id": 8
+    },
+    {
+      "fullname": "mouniga",
+      "email": "mouni@gmail.com",
+      "password": "mouni",
+      "confirmpassword": "mouni",
+      "id": 9
+    },
+    {
+      "username": "Mouniga20",
+      "email": "mounigac2019@gmail.com",
+      "password": "Mouni@2001",
+      "confirmpass": "Mouni@2001",
+      "id": 10
+    },
+    {
+      "username": "Mouni2001",
+      "email": "mounigac2019@gmail.com",
+      "password": "Mouni@2001",
+      "confirmpass": "Mouni@2001",
+      "id": 11
+    },
+    {
+      "username": "Mouni2001",
+      "email": "2k19cse047@kiot.ac.in",
+      "password": "mouni@2001",
+      "confirmpass": "mouni@2001",
+      "id": 12
+    },
+    {
+      "username": "Mouni2001",
+      "email": "2k19cse054@kiot.ac.in",
+      "password": "mouni@2001",
+      "confirmpass": "mouni@2001",
+      "id": 13
+    }
+  ],
+  "users": [
+    {
+      "name": "Mouniga",
+      "email": "mounigac2019@gmail.com",
+      "password": "mouni",
+      "id": 1
+    },
+    {
+      "name": "Mouniga",
+      "email": "mounigac2019@gmail.com",
+      "password": "mouni",
+      "id": 2
+    },
+    {
+      "name": "lavan",
+      "email": "2k19cse058@kiot.ac.in",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "Mouniga",
+      "email": "mounigac2019@gmail.com",
+      "password": "1234",
+      "id": 4
+    }
+  ],
+  "addtocart": [],
+  "admin": [
+    {
+      "name": "Mouniga",
+      "password": "admin@20",
+      "email": "admin20@gmail.com",
+      "id": 1
+    }
+  ],
+  "shelves": [
+    {
+      "id": 1,
+      "image": "/assets/Images/wall shelves/wall shelves - 3 wall shelf for home decor.webp",
+      "description": "Wall Shelves wall shelf for home decor",
+      "title": "hexagonal box",
+      "price": "400"
+    },
+    {
+      "id": 2,
+      "image": "/assets/Images/wall shelves/wall shelves -1 data_wall-shelves_bee-hive-wall-shelves_updated_1-750x650.jpg",
+      "description": "wall-shelves bee-hive wall shelves",
+      "title": "hexagonal box",
+      "price": "200"
+    },
+    {
+      "id": 3,
+      "image": "/assets/Images/Hexagon wall shelves,set of 2 - Matte black.jpg",
+      "description": "hexagon wall shelves-set of 2-matte black",
+      "title": "hexagonal box",
+      "price": "150"
+    },
+    {
+      "id": 4,
+      "image": "/assets/Images/wall shelves/wall shelves -4 living hexogon wall shelves.webp",
+      "description": "Wall Shelves for living hexogon wall shelves",
+      "title": "hexagonal box",
+      "price": "350"
+    },
+    {
+      "id": 5,
+      "image": "/assets/Images/wall shelves/wall-5.webp",
+      "description": "Wall Shelves Floating Shelves",
+      "title": "Wall Shelves",
+      "price": "150"
+    },
+    {
+      "id": 6,
+      "image": "/assets/Images/wall shelves/wall-6.jpg",
+      "description": "Industrial Metal Wire 2 - 3 Tier Black Shelf Rack Vintage Basket Wall Mounted",
+      "title": "Meatl wall shelf",
+      "price": "300"
+    },
+    {
+      "id": 7,
+      "image": "/assets/Images/wall shelves/wall-7.webp",
+      "description": "Large 3 Tiers Black Industrial Wall Hanging Shelf Plant Pot Shelving Storage Display Shelves Cube Bookshelf",
+      "title": "Wall Hanging Shelf",
+      "price": "430"
+    },
+    {
+      "id": 8,
+      "image": "/assets/Images/wall shelves/wall-8.webp",
+      "description": "Rustic scaffold board shelves with industrial raw steel brackets",
+      "title": " board shelves",
+      "price": "150"
+    },
+    {
+      "image": "/assets/Images/wall%20shelves/56890_jpg_800x.jpg",
+      "description": "Loving Swan Backlit Wood Wall Shelf / Book Shelf / Night Light, Light Oak Finish",
+      "title": "Wall Shelf",
+      "price": "3999",
+      "id": 9
+    }
+  ],
+  "cup": [
+    {
+      "id": 3,
+      "image": "/assets/Images/cup/glass ware/glassware-5.webp",
+      "description": "Jeremiah Turquoise Gingko Leaf Drinking Glass (Set of 2)",
+      "title": "Glass",
+      "price": "250"
+    },
+    {
+      "id": 4,
+      "image": "/assets/Images/cup/glass ware/glassware-6.jpg",
+      "description": "Set of 4 Gold Rim Red Wine Glasses",
+      "title": "Glassware",
+      "price": "350"
+    },
+    {
+      "id": 5,
+      "image": "/assets/Images/cup/glass ware/glassware-7.avif",
+      "description": "Set of 4 BUBBLE L WINE GLASS",
+      "title": "Glassware",
+      "price": "300"
+    },
+    {
+      "id": 6,
+      "image": "/assets/Images/cup/glass ware/glass ware - 2.jpg",
+      "description": "VINTERFEST Glass, clear glass, Santa Claus",
+      "title": "Glassware",
+      "price": "300"
+    },
+    {
+      "id": 7,
+      "image": "/assets/Images/cup/glass ware/glass ware -3.webp",
+      "description": "Jeremiah Turquoise Gingko Leaf Drinking Glass (Set of 2)",
+      "title": "Glass",
+      "price": "250"
+    },
+    {
+      "image": "/assets/Images/cup/glass%20ware/photo-1601477575132-df687f64f14c.avif",
+      "description": "Coffee cup",
+      "title": "Glass ware",
+      "price": "200",
+      "id": 8
+    }
+  ],
+  "mirror": [
+    {
+      "id": 1,
+      "image": "/assets/Images/wall mirror/wall mirror - wallmantra-wall-mirror-beautiful-leaf-design-decorative-wooden-wall-mirror.webp",
+      "description": "glass Archivi - Kanz Kanz",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 2,
+      "image": "/assets/Images/wall mirror/wall mirror -2silver-glass---mdf-globus-wall-mirror-by-venetian-design-silver-glass---mdf-globus-wall-mirror.webp",
+      "description": "wall mirror -2silver-glass---mdf-globus-wall-mirror-by-venetian-design-silver-glass",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 3,
+      "image": "/assets/Images/wall mirror/mirror-7.webp",
+      "description": "Matte Polish Golden Bordered Minimalist Round Wall Mirror",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 4,
+      "image": "/assets/Images/wall mirror/miror-8.jpg",
+      "description": "Sunburst mirrors are the omnipresent home decor I can't stop noticing ",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 5,
+      "image": "/assets/Images/wall mirror/wall mirror -3 -hexagon-design-led-wall-mirror-18x24-arvind-sanitary-original.webp",
+      "description": "Hexagon-design-led-wall-mirror-18x24-arvind-sanitary-original",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 6,
+      "image": "/assets/Images/wall mirror/wall mirror -1 modern wall mirror.avif",
+      "description": "modern wall mirror",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 7,
+      "image": "/assets/Images/wall mirror/mirror-5.jpg",
+      "description": "Wall Mirror Stanford Frame Matt Black 90cm - KARE Cyprus",
+      "title": "Mirror Frames",
+      "price": "250"
+    },
+    {
+      "id": 8,
+      "image": "/assets/Images/wall mirror/mirror-6.webp",
+      "description": "Miramar Antique Decorative Wall Mirror",
+      "title": "Mirror Frames",
+      "price": "250"
+    }
+  ],
+  "light": [
+    {
+      "image": "/assets/Images/light/homeselite-wall-lamps-sconces-oil-rubbed-retro-copper-wall-light.webp",
+      "description": "Copper wall light - decorative light",
+      "title": "Wall Light",
+      "price": "450",
+      "id": 2
+    },
+    {
+      "image": "/assets/Images/light/light-2.jpg",
+      "description": "wooden hanging decorative light at low price",
+      "title": "Hanging light",
+      "price": "550",
+      "id": 3
+    },
+    {
+      "image": "/assets/Images/light/light-3.jpg",
+      "description": "Oil Rubbed Retro Copper Wall Light",
+      "title": "Wall light",
+      "price": "650",
+      "id": 4
+    },
+    {
+      "image": "/assets/Images/light/light-4.jpg",
+      "description": "Festive Light",
+      "title": "Light",
+      "price": "400",
+      "id": 5
+    }
+  ],
+  "clocks": [
+    {
+      "id": 1,
+      "image": "/assets/Images/clocks/craftel analog wall clock.webp",
+      "description": "craftel analog Decorative Wall Mirror",
+      "title": "Clocks",
+      "price": "250"
+    },
+    {
+      "id": 2,
+      "image": "/assets/Images/clocks/kb trade analog1.webp",
+      "description": "craftel analog Decorative Wall Mirror",
+      "title": "Clocks",
+      "price": "250"
+    },
+    {
+      "id": 3,
+      "image": "/assets/Images/clocks/grab basket analog wall clock1.webp",
+      "description": "craftel analog Decorative Wall Mirror",
+      "title": "Clocks",
+      "price": "250"
+    },
+    {
+      "id": 4,
+      "image": "/assets/Images/clocks/kadio analog wall clock1.webp",
+      "description": "craftel analog Decorative Wall Mirror",
+      "title": "Clocks",
+      "price": "250"
+    },
+    {
+      "id": 5,
+      "image": "/assets/Images/clocks/kb trade analog1.webp",
+      "description": "craftel analog Decorative Wall Mirror",
+      "title": "Clocks",
+      "price": "250"
+    },
+    {
+      "id": 6,
+      "image": "/assets/Images/clocks/poksi analog1.webp",
+      "description": "craftel analog Decorative Wall Mirror",
+      "title": "Clocks",
+      "price": "250"
+    }
+  ],
+  "statue": [
+    {
+      "id": 1,
+      "image": "/assets/Images/sculptures/homet1.jpg",
+      "description": "Decorative metal items",
+      "title": "Sculptures",
+      "price": "250"
+    },
+    {
+      "id": 2,
+      "image": "/assets/Images/sculptures/sus1.jpg",
+      "description": "Decorative metal items",
+      "title": "Sculptures",
+      "price": "250"
+    },
+    {
+      "id": 3,
+      "image": "/assets/Images/sculptures/suf1.jpg",
+      "description": "Decorative metal items",
+      "title": "Sculptures",
+      "price": "250"
+    },
+    {
+      "id": 4,
+      "image": "/assets/Images/sculptures/sufo1.jpg",
+      "description": "Decorative metal items",
+      "title": "Sculptures",
+      "price": "250"
+    }
+  ],
+  "products": [
+    {}
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "fullName": "MOUNIGA C",
+      "email": "ffsed@gmail.com",
+      "address": "35/1,tHAMBIDUARI STREET",
+      "city": "salem",
+      "state": "TN",
+      "zipCode": "637501",
+      "nameOnCard": "111111111111111111",
+      "creditCardNumber": "1111111111111111",
+      "expiryMonth": "12",
+      "expiryDate": "13",
+      "cvv": "123",
+      "totalPrice": 350,
+      "userId": 4,
+      "id": 1
+    }
+  ]
+}

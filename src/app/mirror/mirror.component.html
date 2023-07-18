@@ -1,0 +1,66 @@
+<!-- <app-user-header></app-user-header> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Home decor Website </title>
+</head>
+<body>
+  <div class="home" style="margin-top:80px;">
+    <div class="home-text">
+      <p>Welcome to our Home Decor</p>
+      <span>Discover the latest trends and designs for your home</span>
+      <button><a href="#">Discount 20%</a></button>
+    </div>
+    <div class="image">
+      <img src="/assets/Images/frame10.png" width="250" height="250">
+    </div>
+  </div>
+  <div class="newProduct">
+    <div class="center-text">
+      <h2>New Arrival items</h2>
+    </div>
+    <div class="product-items">
+      <div class="product" *ngFor="let item of productList">
+        <div class="product-content">
+          <div class="product-img">
+            <img src={{item.image}}>
+          </div>
+          <div class="product-btns">
+            <button class="btn-cart"routerLink="/mirrordetails/{{item.id}}" >View details</button>
+            <button class="btn-buy" routerLink="/payment-page">Buy now</button> 
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-info-top">
+            <h2 class="sm-title">{{item.title}}</h2>
+            <div class="rating">
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+          </div>
+          <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 25ch;"class="text">
+           {{item.description}}
+          </div>
+          <span style="color:#000;"class="text-light"></span>
+          <p class="product-price">₹450.00</p>
+          <p class="product-price">{{item.price}}</p>
+        </div>
+        <div class="off-info">
+          <h2 class="sm-title">20% off</h2>
+    
+        </div>
+      </div>
+
+    </div>
+  
+
+<br><br>
+<app-footer> </app-footer>

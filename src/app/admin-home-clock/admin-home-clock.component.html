@@ -1,0 +1,331 @@
+<!-- <app-user-header></app-user-header> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Home decor Website </title>
+</head>
+
+<body>
+  <div class="home" style="margin-top:80px;">
+    <div class="home-text">
+      <p>Welcome to our Home Decor</p>
+      <span>Discover the latest trends and designs for your home</span>
+      <button><a href="#">Discount 25%</a></button>
+    </div>
+    <div class="image">
+      <img src="/assets/Images/clock.png.png" width="250" height="250">
+    </div>
+  </div>
+  <!-- <form [formGroup]="products"> -->
+    <div class="newProduct">
+      <div class="center-text">
+        <h2>New Arrival items</h2>
+        <p class="message-p">{{productMessage}}</p>
+      </div>
+      <div class="product-items">
+        <div class="product" *ngFor="let item of productList">
+          <div class="product-content">
+            <div class="product-img" id="image">
+              <img src={{item.image}}>
+            </div>
+            <div class="product-btns">
+              <button class="btn-cart" (click)="deleteProduct(item.id)">Delete</button>
+              <button class="btn-buy" routerLink="/adminUpdateClock/{{item.id}}">Edit</button>
+
+
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-info-top" id="title">
+              <h2 class="sm-title">{{item.title}}</h2>
+              <div class="rating">
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+              </div>
+            </div>
+            <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 25ch;" class="text"
+              id="description">
+              {{item.description}}
+            </div>
+            <span style="color:#000;" class="text-light"></span>
+            <p class="product-price">₹450.00</p>
+            <p class="product-price" id="price">{{item.price}}</p>
+          </div>
+          <div class="off-info">
+            <h2 class="sm-title">25% off</h2>
+
+          </div>
+        </div>
+
+
+        <!-- <div class="product">
+        <div class="product-content">
+          <div class="product-img">
+            <img src="/assets/Images/wall shelves/wall shelves - 3 wall shelf for home decor.webp">
+          </div>
+          <div class="product-btns">
+            <button class="btn-cart">Add to cart</button>
+            <button class="btn-buy">Buy now</button> 
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-info-top">
+            <h2 class="sm-title">Wall Shelves</h2>
+            <div class="rating">
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+          </div>
+          <span class="text-light">Wall shelf wall decor</span>
+          <p class="product-price">₹150.00</p>
+          <p class="product-price">₹133.00</p>
+        </div>
+        <div class="off-info">
+          <h2 class="sm-title">25% off</h2>
+    
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-content">
+          <div class="product-img">
+            <img src="/assets/Images/wall shelves/wall shelves - 3 wall shelf for home decor.webp">
+          </div>
+          <div class="product-btns">
+            <button class="btn-cart">Add to cart</button>
+            <button class="btn-buy">Buy now</button> 
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-info-top">
+            <h2 class="sm-title">Wall Shelves</h2>
+            <div class="rating">
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="fa fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+          </div>
+          <span class="text-light">Wall shelf wall decor</span>
+          <p class="product-price">₹150.00</p>
+          <p class="product-price">₹133.00</p>
+        </div>
+        <div class="off-info">
+          <h2 class="sm-title">25% off</h2>
+    
+        </div>
+      </div>
+    </div> -->
+        <!-- <div class="new-content" *ngFor="let item of productList">
+      <div class="row">
+        <img src="{{item.image}}">
+        <h4>Single Attractive cup</h4>
+        <span>₹250</span>
+        <h5>{{item.price}}</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="top">
+          <p>New</p>
+        </div>
+        <div class="bbtn">
+          <a>Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <button (click)="addtocart(item)"><i class="fa fa-shopping-cart" ></i></button>
+        </div>
+        <div class="favourate">
+          <a (click)=addtocart(item)><i class="fa fa-heart"></i></a>
+        </div>
+      </div> -->
+
+        <!-- <div class="row">
+        <img src="/assets/Images/glass ware/glass ware - 2.jpg">
+        <h4>Transparent glass</h4>
+        <span>₹600</span>
+        <h5>₹280</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="top">
+          <p>Offer 75%</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="/assets/Images/glass ware/glass ware -1 Obakki-Glassware-Collection-1.jpeg">
+        <h4>Multiple colour cups</h4>
+        <span>₹2000</span>
+        <h5>₹1000</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="top">
+          <p>new</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="/assets/Images/glass ware/glass ware -3.webp">
+        <h4>White glass</h4>
+        <span>₹250</span>
+        <h5>₹200</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="top">
+          <p>New</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <img src="/assets/Images/glass ware/glassware-4.jpeg">
+        <h4>Painted cups</h4>
+        <span>₹2500</span>
+        <h5>₹1800</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="top">
+          <p>New</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <img src="/assets/Images/glass ware/home-image-3.webp">
+        <h4>Cup</h4>
+        <span>₹550</span>
+        <h5>₹480</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="top">
+          <p>New</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#" (click)="addtocart(item)"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+ -->
+
+        <!-- <div class="row">
+        <img src="/assets/Images/cup-1.webp">
+        <h4>Cup</h4>
+        <h5>₹180</h5>
+        <div class="top">
+          <p>New</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <img src="/assets/Images/cup-1.webp">
+        <h4>Cup</h4>
+        <h5>₹180</h5>
+        <div class="top">
+          <p>New</p>
+        </div>
+        <div class="bbtn">
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="addtocart">
+          <a href="#"><i class='fa fa-shopping-cart'></i></a>
+        </div>
+        <div class="favourate">
+          <a href="#"><i class="fa fa-heart"></i></a>
+        </div>
+      </div> -->
+
+      </div>
+
+
+
+      <br><br>
+
+      <app-footer> </app-footer>

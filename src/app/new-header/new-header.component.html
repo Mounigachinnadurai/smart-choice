@@ -1,0 +1,173 @@
+<header>
+  <nav class="nav">
+    <h3><a routerLink="/"><i class='fa fa-spa'></i>SmartChoice</a> </h3>
+    <!-- <div *ngIf="menuType!=='admin'" class="nav-search">
+    <input type="text"
+    #searchInput
+    (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products" />
+    <button (click)="submitSearch(searchInput.value)" >Search</button>
+    <ul class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+      </li>
+    </ul>
+  </div> -->
+    <div [ngSwitch]="menuType" class="menu">
+      <!-- <ul *ngSwitchCase="'default'">
+        <li><a routerLink="adminAuth">Admin</a></li>
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="userAuth">Login</a></li>
+         <li><a href="#">Cart({{cartItems}})</a></li> -->
+      <!-- </ul>  -->
+      <ul *ngSwitchCase="'default'">
+        <div class="navbar" style="position:relative;
+      font-size:20px;
+      color:#e4e4e4;
+      text-decoration: none;
+      font-weight: 400;
+      margin-left:32%;
+      position:fixed;
+      /* padding:8px 4.5%; */
+      background:#24262b;
+      top:0;
+      left:0;
+      height:80px;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      z-index: 2;">
+          <a style="padding-left: 10px;" routerLink="/home">Home</a>
+          <a routerLink="/feature">Features</a>
+          <a routerLink="/contactus">Contact us</a>
+          <a routerLink="/review">Reviews</a>
+        </div>
+
+       
+        
+          <!-- <button class="dropbtn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button> -->
+          
+
+        <!-- <li><a [routerLink]="cartItems>0?'cart':null"><i class='fa fa-cart-arrow-down'>({{cartItems}})</i></a></li> -->
+        <div class="dropdown2">
+          <button class="dropbtn2" routerLink="/login"><i class="fa fa-user"></i></button>
+
+         
+        </div>
+
+
+      </ul>
+      <ul *ngSwitchCase="'user'">
+        <div class="navbar" style="position:relative;
+      font-size:20px;
+      color:#e4e4e4;
+      text-decoration: none;
+      font-weight: 400;
+      margin-left:32%;
+      position:fixed;
+      /* padding:8px 4.5%; */
+      background:#24262b;
+      top:0;
+      left:0;
+      height:80px;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      z-index: 2;">
+          <a style="padding-left: 10px;" routerLink="/home">Home</a>
+          <a routerLink="/feature">Features</a>
+          <a routerLink="/contactus">Contact us</a>
+          <a routerLink="/review">Reviews</a>
+        </div>
+
+       
+        
+          <!-- <button class="dropbtn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button> -->
+          
+        <div class="cart">
+        <li><a [routerLink]="cartItems>0?'cart':null"><i class='fa fa-cart-arrow-down'>({{cartItems}})</i></a></li></div>
+        <div class="dropdown">
+          <button style="margin-top:-30px;position: absolute;
+          /* margin-left:50px; */
+          margin-top:-20px;
+          right:40px;
+          height:45px;
+          color:#e4e4e4;
+          width: 45px;
+          background-color: #494b4f;
+          border-radius: 50%;
+          border:none;
+      "><i class="fa fa-user"></i></button>
+
+          <div class="dropdown-content">
+            <div class="profile-box">
+            <i class='fa fa-user'></i>
+            <ul style="margin-left:13%;">{{userName | titlecase}}</ul>
+          </div>
+            <a routerLink="order">My Orders</a>
+          <a (click)="userLogout()">Logout</a>
+
+
+          </div>
+        </div>
+
+
+      </ul>
+      <ul *ngSwitchCase="'admin'">
+        <div class="dropdown">
+          <li><a class="dropbtn" routerLink="adminAddProduct">Add Product</a></li>
+          <div class="dropdown-content">
+            <a routerLink="/adminAddProduct">Cup</a>
+            <a routerLink="/adminAddShelves">Wall Shelves</a>
+            <a routerLink="adminAddLight">Light</a>
+            <a routerLink="adminAddMirror">Mirror</a>
+            <a routerLink="adminAddStatue">Statue</a>
+            <a routerLink="adminAddClock">Clocks</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <li><a class="dropbtn">Update product</a></li>
+          <div class="dropdown-content">
+            <a routerLink="/adminHomeCup">Cup</a>
+            <a routerLink="/adminHomeShelves">Wall Shelves</a>
+            <a routerLink="/adminHomeLight">Light</a>
+            <a routerLink="/adminHomeMirror">Mirror</a>
+            <a routerLink="/adminHomeStatue">Statue</a>
+            <a routerLink="/adminHomeClock">Clocks</a>
+          </div>
+
+        </div>
+        <!-- <li><a class="dropbtn" (click)="logout()">Logout</a></li>
+        <li><a href="#">{{adminName | titlecase}}</a></li> -->
+        <!-- <div class="dropdown1">
+          <button class="dropbtn1" routerLink="/order"><i class="fa fa-shopping-bag"></i></button>
+
+         
+        </div> -->
+        <li>
+          <div class="dropdown" style="height:30px;
+          width: 30px;
+          background-color: #24262b;">
+            <button class="dropbtn" style="border:none;
+            height:45px;
+            width: 45px;
+            background-color: #494b4f;
+            font-size: 20px;
+            color:#e4e4e4;
+            border-radius: 50%;"><i class="fa fa-user"></i></button>
+  
+            <div class="dropdown-content" style="border-radius: 10px;">
+              <div class="profile-box">
+              <i class='fa fa-user'></i>
+              <ul style="margin-left:13%;">{{adminName | titlecase}}</ul>
+            </div>
+              <!-- <a routerLink="taken-order">My Orders</a> -->
+            <a (click)="logout()">Logout</a>
+  
+  
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
